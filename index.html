@@ -1,201 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 
-:root {
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+  <div class="container flex justify-between items-center">
+    
+    <nav class="text">
+      <a class="Home" href="#">Home</a>
+      <a class="About" href="https://www.linkedin.com/in/parth-pethia/">Linkedin</a>
+      <a class="About" href="https://www.youtube.com/@PethiaJi">Youtube</a>
+      <a class="About" href="mailto:parthpethia@gmail.com">Mail</a>
+      <a class="About" href="https://www.instagram.com/parth_pethia13/">Instagram</a>
+      <a class="About" href="https://parth.pethiya.com">Website</a>
+      <a class="Project" href="https://github.com/parthpethia">Github</a>
+
+    </nav>
+
+  </div>
   
-  --primary: #a7a7fe;  
-}
+  <div class="hero flex items-center justify-left mt-4">
+    <span></span>
+      <div class="logo">
+      <img src="https://parth.pethiya.com/wp-content/uploads/2024/10/parth.png" alt="Profile">
+  </div>
+    
+  <div class="right">
+      <h1>HI I'm <br>PARTH PETHIA</h1>
+      <hr >
+      <h4>
+        STUDENT AT <br>
+        SCALER SCHOOL OF TECHNOLOGY <br>
+       </h4>
+  </div>
+     <hr>
+</header>
+    <section class="about">
+        <div class="main flex items-centre">
+            <div>
+                <h1>About <span>Me</span></h1>
+                <h3>HEY! I AM PARTH PETHIA</h3>
+                <p>As a Computer Science student at SCALER SCHOOL OF TECHNOLOGY, I possess a strong interest in digital media and technology. I am enthusiastic about further developing my expertise in video editing, 3D modeling, and visual effects. My practical experience with diverse software applications has cultivated a versatile skill set that I am prepared to utilize in practical project applications.
+                </p>
+            </div>
+        </div>
+        
+    </section>
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
+    <h1 style="display:flex ; color: white; justify-content: center;">PHOTOGRAPHY</h1>
 
-body {
-  background: linear-gradient(to bottom left, white, blue);
-  font-family: 'Poppins', sans-serif;
-}
+<section class="insta">
+  <div class="gallery">
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cs8PZg2v3yW/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ct65pO0vINe/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CvPZ-_1qbCl/" data-instgrm-version="14"></blockquote>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CsOUZPxPAEj/" data-instgrm-version="14"></blockquote>
 
+  </div>
+</section>
 
-.text {
-  background-color: azure;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1.5rem;
-  gap: 1.5rem; 
-  transition: transform 0.6s ease;
-  margin: auto;
-}
+<script async src="https://www.instagram.com/embed.js"></script>
 
-
-.text:hover {
-  transform: scale(1.05);
-}
-
-header {
-  background-color: var(--bgDark);
-  padding: 1rem 0;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.logo img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-}
-
-.right {
-  margin-right: 400px;
-}
-
-.right img {
-  height: 80px;
-}
-
-header nav a {
-  color: var(--bgDark);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-header nav a:hover {
-  color: var(--primary);
-  transform: translateY(-2px);
-}
-
-
-header .left img {
-  border-radius: 10%;
-}
-
-
-.hero {
-  display: flex;
-  justify-content: LEFT;
-  align-items: center;
-  gap: 3rem;
-  padding: 3rem 0;
-  color: white;
-    font-family: "Delius", cursive;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.hero img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.hero .right h6 {
-  font-size: 1.2rem;
-  color: var(--primary);
-}
-
-.hero .right h2 {
-  font-size: 2rem;
-  line-height: 1.4;
-  margin-top: 1rem;
-}
-
-.hero .right a {
-  color: var(--primary);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.hero .right a:hover {
-  text-decoration: underline;
-}
-
-
-.about {
-  background: #fff;
-  color: var(--secondary);
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform  1s ease;
-}
-
-.about:hover{
- transform: scale(1.2);
-}
-
-.about h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about h1 span {
-  color: var(--primary);
-}
-
-.about h3 {
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-.about p {
-  line-height: 1.6;
-}
-
- .insta {
-    padding: 1rem;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
-}
-
-.gallery blockquote {
-  flex: 1 1 300px;
-  max-width: 320px; 
-  min-width: 280px;
-}
-
-
- @media (max-width: 1000px) {
-    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-  @media (max-width: 700px) {
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 420px) {
-    .gallery-grid { grid-template-columns: 1fr; }
-  }
-
-#colophon{
-    align-content: center;
-
-}
+   
+<footer id="colophon" class="site-footer pt-3 pb-3">
+	<div class="container" style="color: aliceblue;">
+		<div class="site-info text-center">
+				------------------------------------------------------------------------------------------------------------------  Created  by Parth Pethia			</a>
+			<span class="sep"> | </span>
+			<a></a>Connect with me. ----------------------------------------------------------------------------------------------------------------
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>
