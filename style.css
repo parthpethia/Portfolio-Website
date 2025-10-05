@@ -171,11 +171,19 @@ header .left img {
     margin: 0 auto;
   }
 
-.gallery{
-   display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
 }
+
+.gallery blockquote {
+  flex: 1 1 300px;
+  max-width: 320px; 
+  min-width: 280px;
+}
+
 
  @media (max-width: 1000px) {
     .gallery-grid { grid-template-columns: repeat(3, 1fr); }
